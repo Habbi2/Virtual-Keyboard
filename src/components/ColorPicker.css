@@ -1,0 +1,34 @@
+.color-picker-container {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.color-picker-container h3 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s;
+}
+
+.color-option:hover {
+  transform: scale(1.2);
+  border: 2px solid white;
+}
