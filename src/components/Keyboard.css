@@ -18,6 +18,17 @@
   width: 100%;
 }
 
+/* Tighter spacing for the second row (a-s-d-f-g-h-j-k-l) */
+.keyboard-row:nth-child(2) {
+  max-width: 85%;
+  margin: 6px auto;
+}
+
+.keyboard-row:nth-child(2) .keyboard-key {
+  margin: 0 2px;
+  flex: 0.9;
+}
+
 .keyboard-key {
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
@@ -29,13 +40,13 @@
   min-width: 20px;
   height: 45px;
   flex: 1;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   backdrop-filter: blur(5px);
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 500;
 }
 
@@ -44,7 +55,7 @@
 }
 
 .key-space {
-  flex: 18;
+  flex: 20;
 }
 
 .key-backspace, .key-shift, .key-123, .key-return {
